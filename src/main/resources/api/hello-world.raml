@@ -1,0 +1,22 @@
+#%RAML 1.0
+
+traits:
+  trait:
+    securedBy:
+      - basicAuth
+    responses:
+      "200":
+        body:
+          application/json:
+            example:
+              message: Hello world
+            type: any
+title: Hello World
+
+securitySchemes:
+  basicAuth : !include /exchange_modules/aca01d71-24e7-4a34-b5f0-fbc45dbf9fb4/basic-auth/1.0.0/Security/basic-auth.raml
+
+/helloworld:
+  get:
+    is:
+      - trait
