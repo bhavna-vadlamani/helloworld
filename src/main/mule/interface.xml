@@ -7,7 +7,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
         <http:listener-connection host="0.0.0.0" port="8081" />
     </http:listener-config>
     <apikit:config name="hello-world-config" api="hello-world.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
-	<api-gateway:autodiscovery apiId="17227157" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="f9428ec7-8949-464e-9fd9-7f1fbf5d9afd" flowRef="hello-world-main" />
+	<api-gateway:autodiscovery apiId="17262972" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="f9428ec7-8949-464e-9fd9-7f1fbf5d9afd" flowRef="hello-world-main" />
 	<flow name="hello-world-main">
         <http:listener config-ref="hello-world-httpListenerConfig" path="/api/*">
             <http:response statusCode="#[vars.httpStatus default 200]">

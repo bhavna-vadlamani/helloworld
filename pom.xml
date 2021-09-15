@@ -36,7 +36,7 @@
 						<username>BhavnaV</username>
 						<password>Rakshith@16</password>
 						<applicationName>helloworld14092021</applicationName>
-						<environment>SANDBOX</environment>
+						<environment>DEV</environment>
 						<objectStoreV2>true</objectStoreV2>
 						<region>us-east-2</region>
 						<workers>1</workers>
